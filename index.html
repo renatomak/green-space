@@ -18,49 +18,54 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Green Space</title>
   </head>
   <body>
     <header>
-      <h1>Green Space</h1>
-      <button class="btn">Sign In</button>
+      <div class="container-header">
+        <h1>Green Space</h1>
+        <button class="btn">Sign In</button>
+      </div>
     </header>
-    <main>
-      <section class="sign-in">
-        <h2>Sign In</h2>
-        <form action="">
-          <label for="e-mail" class="label">E-mail</label>
-          <input type="text" id="e-mail" class="input" />
-          <label for="password" class="label">Password</label>
-          <input type="password" id="password" />
-          <input type="submit" value="Sign in" class="btn btn-sign" />
-          <input
-            type="button"
-            value="Sign with Google"
-            class="btn btn-with-google"
-          />
-          <span>Don't have an account? <a href="">Sing up</a></span>
-        </form>
-      </section>
 
-      <section class="sign-up">
-        <h2>Sign In</h2>
-        <form action="">
-          <label for="username" class="label">Username</label>
-          <input type="text" id="username" class="input" />
-          <label for="e-mail" class="label">E-mail</label>
-          <input type="text" id="e-mail" class="input" />
-          <label for="password" class="label">Password</label>
-          <input type="password" id="password" />
-          <input type="submit" value="Sign in" class="btn btn-sign" />
-          <input
-            type="button"
-            value="Sign with Google"
-            class="btn btn-with-google"
-          />
-        </form>
-      </section>
+    <main>
+      <div class="container">
+        <section class="section sign-in">
+          <h2>Sign In</h2>
+          <form action="">
+            <label for="e-mail" class="label">E-mail</label>
+            <input type="text" id="e-mail" class="input" />
+            <label for="password" class="label">Password</label>
+            <input type="password" id="password" class="input" />
+            <input type="submit" value="Sign in" class="btn btn-sign" />
+            <input
+              type="button"
+              value="Sign with Google"
+              class="btn btn-with-google"
+            />
+            <span>Don't have an account? <a href="">Sing up</a></span>
+          </form>
+        </section>
+
+        <section class="section sign-up">
+          <h2>Sign Up</h2>
+          <form action="">
+            <label for="username" class="label">Username</label>
+            <input type="text" id="username" class="input" />
+            <label for="e-mail" class="label">E-mail</label>
+            <input type="text" id="e-mail" class="input" />
+            <label for="password" class="label">Password</label>
+            <input type="password" id="password" class="input" />
+            <input type="submit" value="Sign up" class="btn btn-sign" />
+            <input
+              type="button"
+              value="Sign with Google"
+              class="btn btn-with-google"
+            />
+          </form>
+        </section>
+      </div>
     </main>
   </body>
 </html>

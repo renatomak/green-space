@@ -5,23 +5,93 @@
 
 header
     display: flex
-    justify-content: space-between
-    height: 10vh
+    justify-content: center
+    height: 18vh
     align-items: center
     background-color: $primary-color
     color: $white
+
+    .container-header
+        display: flex
+        justify-content: space-between
+        width: 80%
     
     h1
         font-family: 'Pacifico', cursive
         font-weight: 100
-        margin-left: 15%
         font-size: 2rem
     
     button, h1
-        margin-right: 15%
+        font-size: 2rem
+
 
 .btn
     @include btn
     text-transform: uppercase
     padding: 1rem
     border-radius: 0.5rem
+
+main
+    height: 100vh
+    background-image: url('/img/green-space.jpg')
+    background-position: 100% 100%
+    background-size: cover
+    display: flex
+    justify-content: center
+
+    .container
+        display: flex
+        width: 80%
+        justify-content: space-between
+        
+
+    .section
+        background-color: rgba(0, 0, 0, 0.5)
+        display: flex
+        flex-direction: column
+        width: 40%
+        height: 80%
+        align-self: center
+        border-radius: 0.5rem
+
+        h2
+            font-size: 2rem
+            text-align: center
+            padding-top: 3rem
+            text-transform: uppercase
+        form
+            display: flex
+            flex-direction: column
+            padding: 1.5rem
+
+            input, label
+                margin: 0.4rem
+            
+            label
+                font: 1.5rem
+
+            .btn-sign
+                width: 20%
+                align-self: center
+                padding: 0.4rem
+                border-radius: 1rem
+                margin: 1rem
+            
+            .btn-with-google
+                padding: 0.3rem
+                background-color: $danger-color
+                border-radius: 1rem
+                margin: 1rem
+
+
+            .input
+                line-height: 1.8rem
+                border-radius: .5rem
+            
+            span
+                margin: 2rem
+                font-size: 0.8rem
+
+                a
+                    color: blue
+        
