@@ -1,2 +1,27 @@
 @import 'variables'
 @import 'utilities'
+
+@include reset
+
+header
+    display: flex
+    justify-content: space-between
+    height: 10vh
+    align-items: center
+    background-color: $primary-color
+    color: $white
+    
+    h1
+        font-family: 'Pacifico', cursive
+        font-weight: 100
+        margin-left: 15%
+        font-size: 2rem
+    
+    button, h1
+        margin-right: 15%
+
+.btn
+    @include btn
+    text-transform: uppercase
+    padding: 1rem
+    border-radius: 0.5rem
